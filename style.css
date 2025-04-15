@@ -1,0 +1,796 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #006680, #111111);
+    background-attachment: fixed; /* Ensures gradient covers the entire screen */
+    background-size: 200% 200%; /* Smooth gradient transition */
+    animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+/* animation part */
+.animate-1{
+    animation:shakeY;
+    animate:infinite;
+    animation-duration: 3s;
+}
+ 
+.animate-2{
+    animation:slideInLeft;
+    animation-duration: 3s;
+}
+
+.animate-3{
+    animation:slideInRight;
+    animation-duration: 3s;
+}
+
+.animate-4{
+    animation:backInDown;
+    animation-duration: 5s;
+}
+
+.animate-5{
+    animation:fadeInUp;
+    animation-duration: 3s;
+}
+
+.animate-6:hover{
+    cursor: pointer;
+    animation:pulse;
+    animation-duration: 2s;
+}
+
+.animate-7:hover{
+    cursor: pointer;
+    animation:shakeX;
+    animation-duration: 5s;
+}
+
+.animate-8:hover{
+    cursor: pointer;
+    animation:pulse;
+    animation-duration: 1s;
+}
+
+
+
+.nav{
+    background-color: rgba(32, 31, 31, 0.333);
+
+    /* background-color: rgba(32, 31, 31, 0.767); */
+    /* border-bottom: 1px solid #b5b5b5; */
+    
+}
+
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    background-color: yellowgreen;
+}
+
+.logo-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.effect{
+    display: inline-block;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+.effect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Underline position */
+    width: 0;
+    height: 3px; /* Underline thickness */
+    box-shadow: 0 0 10px #fff;
+    background-color: #fff; /* Underline color */
+    transition: width 0.3s ease-in-out;
+}
+
+
+.effect:hover::after {
+    width: 100%; /* Full underline on hover */
+}
+
+.effect-1{
+    display: inline-block;
+    /* position: relative; */
+    /* color: white; */
+    /* cursor: pointer; */
+    text-decoration: underline solid 0 0 10px #fff ;
+
+}
+
+
+.main-2{
+    width: 100%;
+    height: auto;
+    
+    /* background-color: yellowgreen; */
+   /* background-image: url(assets/images/screen.jpg); */
+    /* background-image: url(assets/images/WhatsApp\ Image\ 2025-02-28\ at\ 22.04.15_4aadb0c1.jpg); */
+}
+
+.alpha-bg-left{
+   
+    background-color: rgba(32, 31, 31, 0.333);
+    border-radius: 10px;
+}
+
+.alpha-bg-2-right{
+   
+    background-color: rgba(32, 31, 31, 0.333);
+    border-radius: 10px;
+
+}
+
+.image-div{
+    width: 50%;
+    height: 90vh;
+}
+
+.main-hd-img{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+
+.main-hd-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.backg-1{
+    /* background-color: yellowgreen; */
+}
+
+.nav-1{
+    /* background-color: rgba(210, 0, 210, 0.774); */
+
+}
+
+.content-section{
+    width: 100%;
+    height: auto;
+   /* background-color: #f36fff; */
+    /* background-image: url(assets/images/WhatsApp\ Image\ 2025-02-28\ at\ 22.04.15_4aadb0c1.jpg); */
+
+}
+
+.headp-images{
+    width: 300px;
+    height: 700px;
+    /* background-color: yellowgreen; */
+}
+
+.headp-images img{
+    width: 100%;
+    height: 100%;
+}
+
+.icn-1 {
+    /* background-color: yellowgreen; */
+}
+
+.icn-2 {
+    /* background-color: rgb(205, 50, 109); */
+}
+
+.icn-3 {
+    /* background-color: rgb(205, 128, 50); */
+}
+
+.ANC-image {
+    width: 140px;
+    height: 80px;
+    /* background-color: rgb(63, 50, 205); */
+}
+
+.ANC-image img{
+    width: 100%;
+height: 100%;
+}
+
+.DESIGN-image {
+    width: 85px;
+    height: 80px;
+    /* background-color: rgb(63, 50, 205); */
+}
+
+.DESIGN-image img{
+    width: 100%;
+height: 100%;
+}
+
+.CHARGE-image {
+    width: 90px;
+    height: 85px;
+    /* background-color: rgb(63, 50, 205); */
+}
+
+.CHARGE-image img{
+    width: 100%;
+height: 100%;
+}
+
+.headp-3-images-1{
+    width: 600px;
+    height: 500px;
+    /* background-color: yellowgreen; */
+}
+
+.headp-3-images-1 img{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+
+.button-1 button{
+    width: 260px;
+    height: 50px;
+border: 1px solid white;
+background-color:#006680;
+border-radius: 5px; /* Rounded corners */
+
+}
+
+.button-2 button{
+    width: 260px;
+    height: 50px;
+    border: 3px solid white;
+background-color: #006680;
+border-radius: 5px; /* Rounded corners */
+
+}
+
+.button-3 button{
+    width: 180px;
+    height: 50px;
+    border: 3px solid white;
+background-color: #006680;
+border-radius: 5px; /* Rounded corners */
+
+}
+
+.neon-button {
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    color: white;
+    background-color: transparent; /* Transparent background */
+    border: 3px solid white; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    outline: none;
+    box-shadow:
+        0 0 5px white, /* Inner glow */
+        0 0 10px white, /* Medium glow */
+        0 0 20px white; /* Outer glow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.neon-button:hover {
+    box-shadow:
+        0 0 10px white, /* Inner glow */
+        0 0 20px white, /* Medium glow */
+        0 0 40px white; /* Outer glow */
+    transform: scale(1.05); /* Hover par button thoda sa bada ho jaye */
+}
+
+.text-1-div{
+/* background-color: yellowgreen; */
+}
+
+.text-image{
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.text-image img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.brdr-btm {
+    border-bottom:3px solid #fff;
+}
+
+.backg-2{
+    background-color: #20849d;
+}
+
+.hp-phone{
+    width: 450px;
+    height: 500px;
+    /* background-color: yellowgreen; */
+}
+
+.hp-phone img{
+    width: 100%;
+    height: 100%;
+}
+
+.part-one-img{
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid #fff; */
+    background-color: #07576fba;
+}
+
+.part-one-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.part-3{
+    width: 100px;
+    height: 30px;
+    background-color: #07576fba;
+}
+
+.part-4{
+    width: 100px;
+    height: 100px;
+    background-color: #07576fba;
+}
+
+.part-4 img{
+    width: 100%;
+    height: 100%;
+    background-color: #07576fba;
+}
+
+.div-gray{
+    width: 50px;
+    height: 50px;
+    background-color: #946e6e;
+    border-radius: 50%;
+    border: 1px solid white ;
+
+}
+
+.div-musturd{
+    width: 50px;
+    height: 50px;
+    background-color: #BDB76B;
+    border-radius: 50%;
+    border: 1px solid white ;
+
+}
+
+.div-blue{
+    width: 50px;
+    height: 50px;
+    background-color: #4682B4;
+    border-radius: 50%;
+    border: 1px solid white ;
+
+}
+
+.div-skin {
+    width: 50px;
+    height: 50px;
+    background-color: #D2B48C;
+    border-radius: 50%;
+    border: 1px solid white ;
+
+}
+
+.div-aqua{
+    width: 50px;
+    height: 50px;
+    background-color: #20B2AA;
+    border-radius: 50%;
+    border: 1px solid white ;
+
+}
+
+.div-seegreen{
+    width: 50px;
+    height: 50px;
+    background-color: #187588;
+    border-radius: 50%;
+    border: 1px solid white ;
+}
+
+.div-pink{
+    width: 50px;
+    height: 50px;
+    background-color: #DC143C;
+    border-radius: 50%;
+    border: 1px solid white ;
+
+}
+
+.quantity-div{
+    border: 1px solid white;
+}
+
+.button-4 button{
+    width: 270px;
+    height: 75px;
+
+}
+
+.check{
+    width: 20px;
+    height: 30px;
+}
+
+.button-5 button{
+    width: 500px;
+    height: 60px;
+
+}
+
+.crl{
+    background-color: #055972;
+}
+
+.review{
+    background-color: rgba(32, 31, 31, 0.333);
+
+}
+
+
+.div-child-1-stars{
+
+
+font-size: 50px; /* Star size */
+            color: yellow; /* Star color */
+        }
+
+        .rev-img{
+            width: 130px;
+            height: 130px;
+            background-color: yellowgreen;
+            border-radius: 50%;
+        }
+
+        .rev-img img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+        }
+
+
+        /* caresoul image slide work */
+
+        /* Custom Carousel Styles - Won't interfere with your existing body styles */
+.custom-carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .custom-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  
+  .custom-carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .custom-carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .custom-carousel-item {
+    flex: 0 0 calc(33.333% - 10px);
+    margin: 0 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .custom-carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .custom-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background 0.3s;
+  }
+  
+  .custom-carousel-arrow:hover {
+    background: rgba(0,0,0,0.8);
+  }
+  
+  .custom-carousel-prev {
+    left: 10px;
+  }
+  
+  .custom-carousel-next {
+    right: 10px;
+  }
+  
+  .custom-carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .custom-carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .custom-carousel-dot.active {
+    background: #333;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .custom-carousel-slide {
+      flex-wrap: wrap;
+    }
+    
+    .custom-carousel-item {
+      flex: 0 0 calc(50% - 10px);
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-carousel-item {
+      flex: 0 0 100%;
+    }
+    
+    .custom-carousel-arrow {
+      padding: 8px 12px;
+      font-size: 18px;
+    }
+  }
+
+  footer{
+    margin-top: 25vh;
+  }
+
+.side{
+    border-left: 3px solid white;
+}
+
+.line {
+    border-top: 1px solid white;
+}
+
+.hov:hover{
+    cursor: pointer;
+    text-decoration: 2px solid white underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+      /* background-color: lightblue; */
+    }
+
+    .button-1 button{
+        width: 260px;
+        height: 50px;
+    
+       
+  }
+
+  .button-2 {
+    display: none;
+  }
+
+  .headp-3-images-1{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellowgreen; */
+}
+
+.headp-3-images-1 img{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+
+.rsp-1 {
+    margin-top: 0px;
+}
+
+.rsp-2{
+    display: none;
+}
+}
+
+.rsp-3{
+    margin-top: 40px;
+}
+
+.rsp-4{
+    display: none;
+}
+
+.res{
+    display: none;
+}
+
+.res-dis{
+    display: none;
+}
+
+.res-8{
+    padding: 0px;
+}
+
+.res-9{
+    margin-left:0px ;
+    margin: 0px;
+}
+
+footer{
+    margin-top: 10vh;
+}
+
+
+
+
+
+  
+  /* Small devices (tablets, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+      /* background-color: lightgreen; */
+    }
+
+    .rsp-4{
+        display: flex;
+    }
+
+    .res{
+        display: none;
+    }
+
+    .res-dis{
+        display: none;
+    }
+    
+    .res-8{
+        padding: 0px;
+    }
+    
+    .res-9{
+        margin-left:0px ;
+        margin: 0px;
+    }
+    
+    footer{
+        margin-top: 10vh;
+    }
+  }
+  
+  /* Medium devices (desktops, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+      /* background-color: lightcoral; */
+    }
+    .rsp-4{
+        display: flex;
+    }
+
+    .res{
+        display: flex;
+    }
+
+    .res-dis{
+        display: flex;
+    }
+  }
+  
+  /* Large devices (large desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+      /* background-color: lightgoldenrodyellow; */
+    }
+    .rsp-4{
+        display: flex;
+    }
+
+    .res{
+        display: flex;
+    }
+
+    .res-dis{
+        display: flex;
+    }
+  }
+  
+  /* Extra large devices (1200px and up) */
+  @media (min-width: 1200px) {
+    body {
+      /* background-color: lightgray; */
+    }
+    .rsp-4{
+        display: flex;
+    }
+
+    .res{
+        display: flex;
+    }
+
+    .res-dis{
+        display: flex;
+    }
+    
+  }
+
