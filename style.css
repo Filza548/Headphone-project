@@ -596,25 +596,27 @@ font-size: 50px; /* Star size */
       padding: 8px 12px;
       font-size: 18px;
     }
+
+    footer{
+        margin-top: 25vh;
+      }
+    
+    .side{
+        border-left: 3px solid white;
+    }
+    
+    .line {
+        border-top: 1px solid white;
+    }
+    
+    .hov:hover{
+        cursor: pointer;
+        text-decoration: 2px solid white underline;
+    }
+    
   }
 
-  footer{
-    margin-top: 25vh;
-  }
-
-.side{
-    border-left: 3px solid white;
-}
-
-.line {
-    border-top: 1px solid white;
-}
-
-.hov:hover{
-    cursor: pointer;
-    text-decoration: 2px solid white underline;
-}
-
+  
 
 
 
@@ -671,8 +673,6 @@ font-size: 50px; /* Star size */
 .rsp-2{
     display: none;
 }
-}
-
 .rsp-3{
     margin-top: 40px;
 }
@@ -701,6 +701,13 @@ font-size: 50px; /* Star size */
 footer{
     margin-top: 10vh;
 }
+
+
+
+
+
+}
+
 
 
 
@@ -737,6 +744,8 @@ footer{
     footer{
         margin-top: 10vh;
     }
+
+   
   }
   
   /* Medium devices (desktops, 768px and up) */
@@ -755,10 +764,19 @@ footer{
     .res-dis{
         display: flex;
     }
+
+    .resp-3{
+        font-size: 20px;
+         }
+     
+         .resp-4{
+             font-size: 30px;
+         }
+    
   }
   
   /* Large devices (large desktops, 992px and up) */
-  @media (min-width: 992px) and (max-width: 1199.98px) {
+  @media (min-width: 992px) and (max-width: 1290.98px) {
     body {
       /* background-color: lightgoldenrodyellow; */
     }
@@ -773,10 +791,19 @@ footer{
     .res-dis{
         display: flex;
     }
+
+    .resp-3{
+   font-size: 20px;
+    }
+
+    .resp-4{
+        font-size: 30px;
+    }
+    
   }
   
   /* Extra large devices (1200px and up) */
-  @media (min-width: 1200px) {
+  @media (min-width: 1291px) {
     body {
       /* background-color: lightgray; */
     }
@@ -791,6 +818,26 @@ footer{
     .res-dis{
         display: flex;
     }
+
+    .resp{
+        font-size: 60px;
+    }
+
+    .resp-1{
+        font-size: 30px;
+    }
     
+
+    .resp-2{
+        font-size: 30px;
+    }
+
+    /* .resp-3{
+        font-size: 20px;
+         }
+     
+         .resp-4{
+             font-size: 30px;
+         } */
   }
 
